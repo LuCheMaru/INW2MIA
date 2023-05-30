@@ -2,12 +2,6 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: gray;
-}
-
-img{
-    width: 300px;
-    size: 300px;
 }
 
 main{
@@ -17,8 +11,11 @@ main{
 }
 
 footer{
-    position: relative;
+    justify-content: center;
     background-color: gray;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .container{
@@ -26,7 +23,6 @@ footer{
     font-size: 14px;
     font-weight: bold;
     text-align: center;
-    position: absolute;
     left: 0;
     right: 0;
     bottom: 30px;
@@ -35,15 +31,40 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 p{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    max-width: 1000px;
 }
 
-.pneu{
-    width: 80%;
+.contato{
+    align-items: center;
+}
+
+.rodape{
+    color: #222;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;}
+
+ul{
+    max-width: 1000px;
 }
