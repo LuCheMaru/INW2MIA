@@ -1,0 +1,53 @@
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    max-width: 1000px;
+}
+
+.contato{
+    align-items: center;
+}
+
+.footer{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+ul{
+    max-width: 1000px;
+}
