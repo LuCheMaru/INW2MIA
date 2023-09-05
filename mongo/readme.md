@@ -1,0 +1,1 @@
+Executar seguinte comando: npm i
