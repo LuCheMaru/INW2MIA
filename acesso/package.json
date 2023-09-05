@@ -1,6 +1,19 @@
 {
   "dependencies": {
-    "firebase": "^10.3.0",
-    "init": "^0.1.2"
-  }
+    "firebase": "^10.3.1",
+    "init": "^0.1.2",
+    "json": "^11.0.0",
+    "mongoose": "^7.5.0",
+    "nodemon": "^3.0.1"
+  },
+  "name": "acesso",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
