@@ -4,21 +4,21 @@ mongoose.connect('mongodb://127.0.0.1:27017/escola',
     {
         useNewUrlParser : true,
         useUnifiedTopology: true,
-        serverSelectionTimeoutMS : 30000
+        serverSelectionTimeoutMS : 10000
 });
 
 const db = mongoose.connection;
 
 db.on('error',console.error.bind(console, 'connection error: '))
 db.once('open', function(){
-    console.log("Conectado ao mangoDB");
+    console.log("Conectado ao mongoDB");
 });
 
 const alunoSchema = new mongoose.Schema({
-    matricula : String,
-    Nome : String,
-    Idade : Number,
-    Turma : String
+    matricula: String,
+    Nome: String,
+    Idade: Number,
+    Turma: String
 });
 
 const Aluno = mongoose.model("Aluno", alunoSchema);
@@ -29,6 +29,7 @@ const Paulo = new Aluno({
     Idade : 18,
     Turma : '2MIA'
 });
+Paulo.save();
 
 const Giovana = new Aluno({
     matricula : 'rm00001',
@@ -36,10 +37,4 @@ const Giovana = new Aluno({
     Idade : 18,
     Turma : '2MIA'
 });
-
-Paulo.save()
-Giovana.save()
-
-Aluno.findOne({Nome : 'Giovana Carlos Alberto'}, function(err, Aluno){
-    console.log(Aluno)
-})
+Giovana.save();
